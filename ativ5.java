@@ -18,19 +18,17 @@ public class ativ5 {
 		            System.out.println("Pessoa " + (i + 1) + ":");
 		            // Solicita e lê o nome da pessoa atual
 		            System.out.print("Nome: ");
-		            nomes[i] = ler.nextLine();  // Armazena o nome no array na posição i
-		            // Solicita e lê a idade da pessoa atual
+		            nomes[i] = ler.nextLine();  
 		            System.out.print("Idade: ");
-		            idades[i] = ler.nextInt();  // Armazena a idade no array na posição i
-		            // Consome a quebra de linha deixada pelo nextInt()
+		            idades[i] = ler.nextInt();  
 		            ler.nextLine();
 		        }
 		        System.out.println("PESSOAS MAIORES DE IDADE:"); 
-		        // Variável para contar quantas pessoas são maiores de idade
+		        
 		        int contadorMaiores = 0;
-		        // Loop para verificar e exibir as pessoas maiores de idade
+		        
 		        for (int i = 0; i < 8; i++) {
-		            // Verifica se a idade da pessoa atual é maior ou igual a 18 anos
+		           
 		            if (idades[i] >= IDADE_MAIORIDADE) {
 		                // Incremento o contador de pessoas maiores de idade
 		                contadorMaiores++;
